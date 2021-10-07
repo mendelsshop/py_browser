@@ -1,3 +1,5 @@
+import tkinter
+from tkinter import ttk
 def bookmark_handler():
     with open('bookmarks.txt' , 'rt') as bookmark_file:
         bookmarks = {}
@@ -8,5 +10,10 @@ def bookmark_handler():
             bookmarks[tuple[0]] = tuple[1]
     return bookmarks
             
-def bookmarks_opener():
-    
+class Bookmark:
+    def __init__(self, bookmark_from_dict):
+        self.url = bookmark_from_dict[1]
+        self.name = bookmark_from_dict[0]
+        self.button = None
+    def __str__(self):
+        return self.name

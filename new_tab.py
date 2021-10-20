@@ -45,3 +45,4 @@ class new_Tab():
         cef.Initialize()
         self.browser = cef.CreateBrowserSync(self.window_info, url="https://www.google.com/")
         cef.MessageLoop()
+

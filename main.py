@@ -23,3 +23,4 @@ tabs.append(ttk.Frame(main_window))
 main_window.add(tabs[1],text='➕')
 binding()
 root.mainloop()
+# handle closing window

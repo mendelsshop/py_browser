@@ -1,10 +1,10 @@
 import tkinter
 from tkinter import ttk
 import new_tab
+tabs = []
 def binding():
     tabs[-1].bind('<Expose>',on_add_tab)
 
-tabs = []
 def on_add_tab(event):
     tabs.append(ttk.Frame(main_window))
     main_window.add(tabs[-1],text='➕')
